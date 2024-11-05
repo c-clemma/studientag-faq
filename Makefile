@@ -13,3 +13,9 @@ help:
 	@echo '   remove buildfiles in out/'
 	@echo ' make help'
 	@echo '   show this message'
+	@echo ' make all_posters'
+	@echo '   build posters bzw. "plakate"'
+
+
+all_posters:
+	mkdir plakate; pdflatex -output-directory=plakate -interaction=nonstopmode plakate.tex; mv plakate/plakate.pdf plakate.pdf	
