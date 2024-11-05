@@ -19,6 +19,8 @@ Build the Studientag FAQ flyers
    remove buildfiles in out/
  make help
    show this message
+ make all_posters
+   build posters/"plakate" only
 ```
 
 ## Hinweise zum Druck
