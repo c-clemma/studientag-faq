@@ -17,7 +17,7 @@
 \end{Huge}
 
 \begin{exampleblock}{\textcolor{white}{Was ist der Studiengang?}}
-    Ein sehr interdisziplinärer Studiengang, der einzelne Aspekte der Informatik, (Neuro-)Biologie, Linguistik, Philosophie und Psychologie miteinander verbindet, bzw. auch einzeln behandelt. Alle Fragen, die dem Denken gewidmet sind, finden hier ihren Platz und werden mithilfe der verschiedenen Sichtweisen der unterschiedlichen Disziplinen versucht zu beantworten. Ein Schwerpunktfach gibt es nicht. Danach kann das Studium mit einem Master (4 Semester Regelstudienzeit) weitergeführt werden.
+    Ein sehr interdisziplinärer Studiengang, der einzelne Aspekte der Informatik, (Neuro-)Biologie, Linguistik, Philosophie und Psychologie miteinander verbindet, bzw. auch einzeln behandelt. Alle Fragen, die dem Denken gewidmet sind, finden hier ihren Platz und werden mithilfe der verschiedenen Sichtweisen der unterschiedlichen Disziplinen versucht zu beantworten. Danach kann das Studium mit einem Master (4 Semester Regelstudienzeit) weitergeführt werden.
 \end{exampleblock}
 
 \begin{block}{Welcher Teil macht wie viel im Studium aus?}
@@ -47,26 +47,27 @@
             \begin{tikzpicture}
                 \begin{scope}[start chain=going below,node distance=\nodedistancecorrection]
                     \semester{1}
-                    \veranstaltung{9}{In\-for\-ma\-tik~I}{info}
+                    \veranstaltung{9}{Prak\-tische In\-for\-ma\-tik~I}{info}
                     \veranstaltung{9}{Mathe\-matik f. Informatik~I}{mathe}        
-                    \veranstaltung{6}{Neuro\-bio\-logie und Sinnes\-physio\-logie}{neuro}
-                    \veranstaltung{3}{Mathem. Statistik I}{kogni}
-                    \veranstaltung{3}{Einf.\ Kognition}{kogni}
+                    %\veranstaltung{6}{Neuro\-bio\-logie und Sinnes\-physio\-logie}{neuro}
+                    \veranstaltung{3}{Forschungsm. I}{kogni}
+                    %\veranstaltung{3}{Einf.\ Kognition}{kogni}
+                    \veranstaltung{3}{Comp. Statistik I}{kogni}
+                    \veranstaltung{6}{Grundlagen\ der \ KogWis}{kogni}
                     \SumLP{30}
                 \end{scope}
                 \begin{scope}[xshift=1\lpwidth,start chain=going below,node distance=\nodedistancecorrection]
                     \semester{2}
-                    \veranstaltung{9}{In\-for\-ma\-tik~II}{info}
+                    \veranstaltung{9}{Prak\-tische In\-for\-ma\-tik~2}{info}
                     \veranstaltung{9}{Mathe\-matik f. Informatik~II}{mathe}
-                    \veranstaltung{3}{Allg. Psych. C}{psycho}
-                    \veranstaltung{3}{Comp. Statistik}{kogni}
-                    \veranstaltung{3}{Statistik II}{kogni}
-                    \veranstaltung{3}{Forschungsmeth.}{kogni}
-                    \SumLP{30}
+                    \veranstaltung{3}{Allg. Psych. C/D}{psycho}
+                    \veranstaltung{3}{Comp. Statistik II}{kogni}
+                    \veranstaltung{3}{Forschungsm. II}{kogni}
+                    \SumLP{27}
                 \end{scope}
                 \begin{scope}[xshift=2\lpwidth,start chain=going below,node distance=\nodedistancecorrection]
                     \semester{3}
-                    \veranstaltung{9}{Al\-go\-rith\-men}{info}
+                    \veranstaltung{9}{Theoretische Informatik~I}{info}
                     \veranstaltung{9}{Mathe\-matik f. Informatik~III}{mathe}
                     \veranstaltung{6}{Linguistik}{lingu}
                     \veranstaltung{6}{Exp. Kogwiss.}{kogni}
@@ -75,12 +76,12 @@
                 \end{scope}
                 \begin{scope}[xshift=3\lpwidth,start chain=going below,node distance=\nodedistancecorrection]
                     \semester{4}     
-                    \veranstaltung{9}{Team\-projekt}{sq}
+                    \veranstaltung{9}{WP Team\-projekt}{sq}
                     \veranstaltung{6}{Philosophie}{philo}
                     \veranstaltung{6}{Language \& Cogn.}{lingu}
-                    \veranstaltung{3}{Kog. Architekturen}{kogni}
-                    \veranstaltung{3}{Psychologie}{psycho}
-                    \SumLP{27}
+                    \veranstaltung{6}{Kog. Architekturen}{kogni}
+                    \veranstaltung{3}{Forschungsseminar}{psycho}
+                    \SumLP{30}
                 \end{scope}
                 \begin{scope}[xshift=4\lpwidth,start chain=going below,node distance=\nodedistancecorrection]
                     \semester{5}
@@ -88,16 +89,16 @@
                     \veranstaltung{6}{Computational Neuroscience}{neuro}
                     \veranstaltung{12}{Vertiefung Kogwiss.}{kogni}
                     \veranstaltung{3}{Forschungsseminar}{kogni}
-                    \veranstaltung{3}{Psychologie}{psycho}
-                    \SumLP{30}
+                    \veranstaltung{6}{Perception}{psycho}
+                    \SumLP{33}
                 \end{scope}
                 \begin{scope}[xshift=5\lpwidth,start chain=going below,node distance=\nodedistancecorrection]
                     \semester{6}
                     \veranstaltung{15}{Bachelor\-arbeit}{kogni}
-                    \veranstaltung{9}{Studium Professionale}{sq}
-                    \veranstaltung{3}{Forschungsseminar}{kogni}
-                    \veranstaltung{3}{Kolloquium}{sq}
-                    \SumLP{30}
+                    \veranstaltung{9}{übK}{sq}
+                    %\veranstaltung{3}{Forschungsseminar}{kogni}
+                    \veranstaltung{3}{Forschungskoll.}{sq}
+                    \SumLP{27}
                 \end{scope}
             \end{tikzpicture}
         \end{minipage}}        
