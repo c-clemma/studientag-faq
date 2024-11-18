@@ -1,0 +1,87 @@
+\documentclass{beamer}
+\usepackage[size=a4]{beamerposter}
+\beamertemplatenavigationsymbolsempty
+\usecolortheme{parrot}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\setenumerate{label=\alph*)}
+\usepackage{ngerman}
+\usepackage{eurosym}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{mathtools}
+\usepackage{afterpage}
+\usepackage{mathrsfs}
+\geometry{a4paper, landscape,top=10mm, right=15mm, bottom=10mm, left=15mm}
+\author{Tim Beckmann, Alexander Phi. Goetz}
+
+
+\usepackage{datatool,datapie}
+\usepackage{transparent}
+
+\definecolor{fsiblue}{HTML}{000080}
+
+\setbeamercolor{block body}{bg=fsiblue!10}
+\setbeamercolor{block title}{bg=fsiblue}
+\usetikzlibrary{chains}
+
+\setlength{\DTLpieoutlinewidth}{1pt}
+\renewcommand*{\DTLpieoutlinecolor}{fsiblue!10}
+\renewcommand*{\DTLdisplayinnerlabel}[1]{\textsf{#1}}
+% \renewcommand*{\DTLdisplayouterlabel}[1]{%
+% \DTLdocurrentpiesegmentcolor
+% \textsf{\shortstack{#1}}}
+
+\pdfpageattr {/Group << /S /Transparency /I true /CS /DeviceRGB>>}
+
+\colorlet{medieninfo}{lightblue}
+\colorlet{info}{blue}
+\colorlet{bioinfo}{lightgreen}
+\colorlet{medizininfo}{green}
+\colorlet{kogni}{yellow}
+
+\colorlet{mathe}{darkblue!80}%{turquois}
+\colorlet{andere}{brown}
+\colorlet{sq}{grayviolet}
+
+\colorlet{neutralbg}{black!30}
+
+\newlength{\lpheight}
+\setlength{\lpheight}{4pt}
+\newlength{\lpwidth}
+\setlength{\lpwidth}{56.5pt}
+\newlength{\nodedistancecorrection}
+\setlength{\nodedistancecorrection}{-1pt}
+
+
+\newcommand{\veranstaltung}[3]{% #1: Umfang, #2: Titel, #3: Kategorie/Farbe
+  \node[anchor=north,draw=fsiblue!10,line width=1pt,inner ysep=0pt,inner xsep=0cm,text width=\lpwidth,fill=#3,minimum height=#1\lpheight,on chain,text badly centered,text=white]{#2};}
+
+\newcommand{\semester}[1]{% #1: Semesterzahl
+  \node[anchor=north,draw=white,fill=neutralbg,line width=2pt,inner ysep=4pt,inner xsep=0pt,text width=\lpwidth,minimum height=1.5\lpheight,on chain,text badly centered]{#1.\ Semester};}
+
+\newcommand{\SumLP}[1]{% #1: Summe LP pro Semester
+  \node[anchor=north,draw=neutralbg,fill=white,line width=2pt,inner ysep=4pt,inner xsep=0pt,text width=\lpwidth,minimum height=1.5\lpheight,on chain,text badly centered]{#1\ LP};}
+
+\newcommand{\question}[2]{\large\hspace{3pt}\textbf{#1}\\[3pt]\begin{minipage}{1em}~\end{minipage}\begin{minipage}{.95\linewidth}#2\end{minipage}\\[6pt]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PDF zur Hinterlegung auf der Website. Enhält nur den Flyer für genau einen Studiengang. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%% Beschreibung + FAQ
+%% Lehramt Informatik
+\begin{columns}
+    \column[T]{0.45\textwidth}
+    \input{poster/poster_lehramt.tex}
+    \column[T]{0.45\textwidth}
+    \input{faq/faq_lehramt.tex}
+\end{columns}
+\end{document}
