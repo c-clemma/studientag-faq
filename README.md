@@ -6,6 +6,7 @@ Informationsflyer mit den häufigsten Fragen, die in Tübingen am Studieninfotag
 - `/inhalte`, hier sind CSV Dateien mit den Aufstellungen nach Studienschwerpunkt 
 - `/poster`, hier sind die Vorderseiten mit Informationstext, die in `/inhalte` hinterlegten CSVs werden hier in Tortendiagramme verwandelt. Außerdem befinden sich hier die sources für die Tabellen.
 - `/faq`, hier befinden sich für jeden Studiengang die FAQ.
+- `/individualFlyers`, hier sind die Tex-Files für die Erstellung von Flyern zu einzelnen Studiengängen und die zugehörigen PDFs.
 
 ## Build
 Dieses Repo verfügt über ein `Makefile` und ist auf `pdflatex` angewiesen.
@@ -19,6 +20,8 @@ Build the Studientag FAQ flyers
    remove buildfiles in out/
  make help
    show this message
+ make soloPDFs
+   creates individual flyers for each major
 ```
 
 ## Hinweise zum Druck
