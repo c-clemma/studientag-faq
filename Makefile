@@ -22,4 +22,5 @@ soloPDFs:
 	 pdflatex -output-directory=individualFlyers/out -interaction=nonstopmode individualFlyers/medieninfo_flyer.tex; mv individualFlyers/out/medieninfo_flyer.pdf individualFlyers/PDF/medieninfo_flyer.pdf;
 	 pdflatex -output-directory=individualFlyers/out -interaction=nonstopmode individualFlyers/medizininfo_flyer.tex; mv individualFlyers/out/medizininfo_flyer.pdf individualFlyers/PDF/medizininfo_flyer.pdf;
 	 pdflatex -output-directory=individualFlyers/out -interaction=nonstopmode individualFlyers/lehramt_flyer.tex; mv individualFlyers/out/lehramt_flyer.pdf individualFlyers/PDF/lehramt_flyer.pdf;
+	pdflatex -output-directory=individualFlyers/out -interaction=nonstopmode individualFlyers/kogni_flyer.tex; mv individualFlyers/out/kogni_flyer.pdf individualFlyers/PDF/kogni_flyer.pdf;
 	 
